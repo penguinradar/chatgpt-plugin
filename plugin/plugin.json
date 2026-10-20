@@ -1,27 +1,27 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "instoryview",
+  "name": "penguinradar",
   "version": "0.1.0",
-  "description": "Read the Instagram accounts you track on Instoryview: retained follower and following snapshots and detected changes. Optionally look up a public account online, only with a credit budget you set for each request.",
+  "description": "Read the Instagram accounts you track on PenguinRadar: retained follower and following snapshots and detected changes. Optionally look up a public account online, only with a credit budget you set for each request.",
   "author": {
-    "name": "Instoryview",
-    "url": "https://instoryview.com"
+    "name": "PenguinRadar",
+    "url": "https://penguinradar.com"
   },
-  "homepage": "https://instoryview.com/developers",
+  "homepage": "https://penguinradar.com/developers",
   "keywords": ["instagram", "followers", "tracking"],
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Instoryview",
+        "displayName": "PenguinRadar",
         "shortDescription": "Instagram follower snapshots",
-        "longDescription": "Instoryview tracks follower and following lists for Instagram accounts and keeps the snapshots it collects. This plugin lets you ask about that data in plain language, without leaving the chat.\n\nWhat you can ask\n- Which accounts am I tracking, and when was each last checked?\n- What are an account's follower and following counts?\n- Show the latest available follower or following snapshot, one page at a time.\n- What changed on an account in the last 7 days, or between two dates? New and removed followers and following are shown separately.\n\nHow it behaves\n- Reading stored data is the default. It never contacts Instagram and does not use credits.\n- Changes are labelled \"detected\": Instoryview compares scans, so the time shown is when a change was detected, not when it happened on Instagram.\n- Instagram does not always return a complete list. Snapshots can be partial, and some lists (for example a private account's, or a verified account's followers) may be unavailable or limited. The assistant states the snapshot time and any partial coverage.\n\nOptional online lookup\n- You can ask for a fresh lookup of a public profile, or one page of a public account's followers or following (usually 25 people).\n- Each lookup spends Instoryview credits, so it only runs when you name the account, the type, and the maximum credits. The plugin never fetches whole lists automatically and never raises your budget on its own.\n- Online lookups need a separate permission (data:fetch) that you can leave off when you connect.\n\nConnecting\n- Sign in to Instoryview and approve access through OAuth. No API key or password is pasted into the chat.\n- Read access (data:read) lets the plugin see your tracked accounts and their stored snapshots and changes. You can revoke access at any time in your Instoryview developer settings.\n\nA free Instoryview account includes starter credits; paid plans are on instoryview.com/pricing. Instoryview is an independent service and is not affiliated with or endorsed by Instagram or Meta.",
-        "developerName": "Instoryview",
+        "longDescription": "PenguinRadar tracks follower and following lists for Instagram accounts. This plugin lets you ask about the results in plain language, without leaving the chat.\n\nWhat you can ask\n- Which accounts am I tracking, and when was each last checked?\n- What are an account's follower and following counts?\n- Show the latest available follower or following snapshot, one page at a time.\n- What changed on an account in the last 7 days, or between two dates? New and removed followers and following are shown separately.\n\nHow it behaves\n- Reading stored data is the default. It never contacts Instagram and does not use credits.\n- Changes are labelled \"detected\": PenguinRadar compares scans, so the time shown is when a change was detected, not when it happened on Instagram.\n- Instagram does not always return a complete list. Snapshots can be partial, and some lists (for example a private account's, or a verified account's followers) may be unavailable or limited. The assistant states the snapshot time and any partial coverage.\n\nOptional online lookup\n- You can ask for a fresh lookup of a public profile, or one page of a public account's followers or following (usually 25 people).\n- Each lookup spends PenguinRadar credits, so it only runs when you name the account, the type, and the maximum credits. The plugin never fetches whole lists automatically and never raises your budget on its own.\n- Online lookups need a separate permission (data:fetch) that you can leave off when you connect.\n\nConnecting\n- Sign in to PenguinRadar and approve access through OAuth. No API key or password is pasted into the chat.\n- Read access (data:read) lets the plugin see your tracked accounts and their stored snapshots and changes. You can revoke access at any time in your PenguinRadar developer settings.\n\nA free PenguinRadar account includes starter credits; paid plans are on penguinradar.com/pricing. PenguinRadar is an independent service and is not affiliated with or endorsed by Instagram or Meta.",
+        "developerName": "PenguinRadar",
         "category": "Productivity",
         "capabilities": ["Read", "Write"],
-        "websiteURL": "https://instoryview.com",
-        "supportURL": "https://instoryview.com/about",
-        "privacyPolicyURL": "https://instoryview.com/privacy",
-        "termsOfServiceURL": "https://instoryview.com/terms",
+        "websiteURL": "https://penguinradar.com",
+        "supportURL": "https://penguinradar.com/about",
+        "privacyPolicyURL": "https://penguinradar.com/privacy",
+        "termsOfServiceURL": "https://penguinradar.com/terms",
         "defaultPrompt": [
           "Show my tracked accounts.",
           "What changed on my tracked accounts in the last 7 days?",

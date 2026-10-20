@@ -1,11 +1,11 @@
 {
-  "name": "instoryview-preview",
+  "name": "penguinradar-preview",
   "interface": {
-    "displayName": "Instoryview Preview"
+    "displayName": "PenguinRadar Preview"
   },
   "plugins": [
     {
-      "name": "instoryview",
+      "name": "penguinradar",
       "source": {
         "source": "local",
         "path": "./plugin"
